@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b6bfd9ecde.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Brush+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@300&family=Sunflower&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>쉼 그리고 카페</title>
+  </head>
+  <body>
+    <!-- 공통 header -->
+    <div class="header-section">
+      <div class="header-image"><img src="./images/main.jpeg" alt="" /></div>
+      <header class="header">
+        <div class="icon-clover">
+          <a href="./main.html"><i class="fa-solid fa-clover"></i></a>
+        </div>
+        <div class="div-nav">
+          <a href="./main.html"><span class="nav">홈</span></a>
+          <a href="./collect.html"><span class="nav">모음집</span></a>
+          <a href="./comment.html"><span class="nav">댓글</span></a>
+        </div>
+        <div class="search">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </header>
+      <div class="header-text">
+        <p class="header-text1">춘천 힐링카페 여행</p>
+        <p class="blog">쉼 그리고 카페</p>
+      </div>
+    </div>
+
+    <!-- comment 댓글 -->
+    <div class="talkingBox">
+      <img class="talkingBox-img" src="./images/coffee.png" alt="" />
+      <div class="commentBox">
+        <form action="" id="commentForm">
+          <input class="name" type="text" name="username" placeholder="이름" />
+          <textarea
+            class="comment"
+            name="comment"
+            placeholder="댓글을 입력해주세요."
+            id=""
+            cols="75"
+            rows="8"
+          ></textarea>
+          <button class="button">
+            <img src="./images/send.png" alt="" width="30" />
+          </button>
+        </form>
+      </div>
+      <ul id="comments">
+        <li><b>이주연</b>너무 예쁜 카페들이 많은 것 같아요!!</li>
+        <li><b>박동환</b>좋은 카페들 추천해주셔서 감사해요</li>
+      </ul>
+    </div>
+
+    <!-- javascript -->
+    <script>
+      const commentForm = document.querySelector("#commentForm");
+      const commentsContainer = document.querySelector("#comments");
+
+      commentForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const usernameInput = commentForm.elements.username;
+        const commentInput = commentForm.elements.comment;
+        addComment(usernameInput.value, commentInput.value);
+        usernameInput.value = "";
+        commentInput.value = "";
+      });
+
+      const addComment = (username, comment) => {
+        const newComment = document.createElement("li");
+        const bTag = document.createElement("b");
+        bTag.append(username);
+        newComment.append(bTag);
+        newComment.append(comment);
+        commentsContainer.prepend(newComment);
+      };
+    </script>
+  </body>
+</html>
