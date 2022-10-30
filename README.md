@@ -13,4 +13,4 @@
 
 <img width="600" alt="웨프2" src="https://user-images.githubusercontent.com/81840814/198894289-51dbd8d9-bf6b-4c36-9824-3c4cee3d40b4.PNG">
 
-<img width="599" alt="웨프3" src="https://user-images.githubusercontent.com/81840814/198894290-f691649b-a437-418d-af3e-fe85171a9168.PNG">
+<img width="752" alt="웨프3" src="https://user-images.githubusercontent.com/81840814/198894483-34c7c5fd-6fa2-4412-ac59-92c4d0f6703e.PNG">
