@@ -9,8 +9,8 @@
 
 ## 완성 이미지
 
-<img width="598" alt="웨프1" src="https://user-images.githubusercontent.com/81840814/198894285-fe597e82-8576-431f-a0cd-db9da08cca29.PNG">
+<img width="1014" alt="웨프1" src="https://user-images.githubusercontent.com/81840814/198894582-9701b3ee-561b-4eac-bf8c-7778e36fb508.PNG">
 
-<img width="600" alt="웨프2" src="https://user-images.githubusercontent.com/81840814/198894289-51dbd8d9-bf6b-4c36-9824-3c4cee3d40b4.PNG">
+<img width="1007" alt="웨프2" src="https://user-images.githubusercontent.com/81840814/198894589-e9ac6664-1b04-4a12-a156-e5918d25028f.PNG">
 
 <img width="752" alt="웨프3" src="https://user-images.githubusercontent.com/81840814/198894483-34c7c5fd-6fa2-4412-ac59-92c4d0f6703e.PNG">
